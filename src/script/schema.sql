@@ -1,4 +1,5 @@
 DROP TABLE IF EXISTS materiel;
+DROP TABLE IF EXISTS users;
 
 CREATE TABLE materiel
 (
@@ -7,6 +8,19 @@ CREATE TABLE materiel
     name VARCHAR(250) NOT NULL,
 
     code VARCHAR(250) NOT NULL,
+
+);
+
+CREATE TABLE users
+(
+    id   INT AUTO_INCREMENT PRIMARY KEY,
+
+    username VARCHAR(250) NOT NULL,
+
+    password VARCHAR(250) NOT NULL,
+    
+    role VARCHAR(250) NOT NULL,
+
 
 );
 

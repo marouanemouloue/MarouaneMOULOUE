@@ -6,4 +6,7 @@ public interface GestionMaterielService {
     void init();
     void listerMateriel();
     void ajouterNouveauMateriel(Materiel materiel);
+    void suppMateriel(String id);
+    boolean findOne(String code);
+
 }

@@ -7,6 +7,9 @@ import java.util.List;
 public interface MaterielDao {
     List<Materiel> findAll();
 
-    Materiel findOne(Long id);
-
+    Materiel findOne(String id);
+    // compléter par les autres méthodes
+    int addOne(Materiel m);
+	int deleteOne(String id);
+    
 }
