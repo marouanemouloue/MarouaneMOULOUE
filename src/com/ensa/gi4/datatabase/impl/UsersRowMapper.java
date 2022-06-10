@@ -15,10 +15,12 @@ public class UsersRowMapper implements RowMapper<Users> {
 		// TODO Auto-generated method stub
 		  Users user = new Users();
 
+		  	int id = res.getInt("id");
 	        String username = res.getString("username");
 	        String password = res.getString("password");
 	        String role = res.getString("role");
 
+	        user.setId(id);
 	        user.setUsername(username);
 	        user.setPassword(password);
 	        user.setRole(role);

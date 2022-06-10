@@ -28,5 +28,10 @@ public class GestionUsersServiceImpl implements GestionUsersService {
 		// TODO Auto-generated method stub
 		
 	}
+	@Override
+	public List<Users> listUsers() {
+		// TODO Auto-generated method stub
+		return usersDao.listUsers();
+	}
 
 }
